@@ -1,0 +1,34 @@
+☐ Create Production ElasticSearch cluster: @started(18-12-29 12:48)
+    ✔ Initial config @done(19-01-26 17:25)
+        ✔ Collect yaml files from medium.com @started(18-12-29 12:57) @done(18-12-29 12:57) @lasted(14s)
+        ✔ adapt yaml files to work with azure @started(19-01-12 17:04) @done(19-01-13 11:42) @lasted(18h38m59s)
+            ✔ Add namespace to all files @started(19-01-12 17:01) @done(19-01-12 17:02) @lasted(1m20s)
+            ✔ remove pires container and use ES original @started(19-01-12 17:04) @done(19-01-12 17:04) @lasted(29s)
+        ✔ create readme.md file @started(18-12-29 12:50) @done(18-12-30 12:25) @lasted(23h35m11s)
+        ✔ create azure kubernetes cluster @started(18-12-29 13:30) @done(19-01-10 22:57) @lasted(1w5d9h27m43s)
+        ✔ check that disk was created after applying the persistentVolume @done(19-01-10 22:57)
+        ☐ change number of masters to a realistic value
+        ☐ network host is hardcoded to 0.0.0.0 assess impact
+        ☐ cors is enabled assess impact
+        ☐ change disk lifecycle
+        ☐ change pod affinity
+    ☐ Test cluster with simple documents
+    ☐ Populate readme with changes
+    ☐ Advanced settings
+        ☐ Explore additional settings Xpack,kibana etc 
+        ☐ Create new yaml files as production strength as possible @started(19-01-12 17:00)
+            ☐ Add RBAC
+    ☐ update readme.md file
+    ☐ load test elastic search
+        ☐ investigate technologies
+    ☐ Backup data
+        ☐ add documents to elasticsearch
+        ☐ take a backup
+        ☐ modify documents
+        ☐ restore database
+        ☐ update readme.md file
+
+    
+  
+
+

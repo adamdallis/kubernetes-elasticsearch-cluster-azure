@@ -1,0 +1,48 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceName": {
+            "value": "ElasticSearchCluster"
+        },
+        "location": {
+            "value": "westeurope"
+        },
+        "dnsPrefix": {
+            "value": "ElasticSearchCluster"
+        },
+        "agentCount": {
+            "value": 1
+        },
+        "agentVMSize": {
+            "value": "Standard_B2s"
+        },
+        "servicePrincipalClientId": {
+            "value": ""
+        },
+        "servicePrincipalClientSecret": {
+            "value": ""
+        },
+        "kubernetesVersion": {
+            "value": "1.11.5"
+        },
+        "workspaceName": {
+            "value": "ElasticSearch-1168300d-e9f1-4128-9a75-56c378df243f-WEU"
+        },
+        "omsWorkspaceId": {
+            "value": "/subscriptions/1168300d-e9f1-4128-9a75-56c378df243f/resourceGroups/DefaultResourceGroup-WEU/providers/Microsoft.OperationalInsights/workspaces/ElasticSearch-1168300d-e9f1-4128-9a75-56c378df243f-WEU"
+        },
+        "workspaceRegion": {
+            "value": "westeurope"
+        },
+        "enableHttpApplicationRouting": {
+            "value": false
+        },
+        "networkPlugin": {
+            "value": "kubenet"
+        },
+        "enableRBAC": {
+            "value": false
+        }
+    }
+}

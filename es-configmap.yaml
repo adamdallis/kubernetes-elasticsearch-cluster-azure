@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: elasticsearch-config
+  namespace: ftc-elasticsearch-cluster
+data:
+  elasticsearch.yml: |
+    cluster.name: "myesdb"
+    node:
+      master: ${NODE_MASTER}
+      data: ${NODE_DATA}
+      name: ${NODE_NAME}
+      ingest: ${NODE_INGEST}
+      max_local_storage_nodes: 1
+
+    processors: ${PROCESSORS:1}
+
+    network.host: 0.0.0.0
+
+    #path:
+     # data: /data
+    #  logs: /logs
+      #repo: ${REPO_LOCATIONS}
+
+    bootstrap:
+      memory_lock: ${MEMORY_LOCK}
+
+    http:
+      enabled: "true"
+      compression: true
+      cors:
+        enabled: "true"
+        allow-origin: "*"
+
+    discovery:
+      zen:
+        ping.unicast.hosts: ${DISCOVERY_SERVICE}
+        minimum_master_nodes: ${NUMBER_OF_MASTERS}
